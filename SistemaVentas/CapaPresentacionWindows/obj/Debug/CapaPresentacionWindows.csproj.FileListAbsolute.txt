@@ -1,0 +1,16 @@
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\bin\Debug\CapaPresentacionWindows.exe.config
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\bin\Debug\CapaPresentacionWindows.exe
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\bin\Debug\CapaPresentacionWindows.pdb
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.csprojAssemblyReference.cache
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.Properties.Resources.resources
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.csproj.GenerateResource.cache
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.csproj.CoreCompileInputs.cache
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.exe
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.pdb
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\bin\Debug\CapaEntidad.dll
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\bin\Debug\CapaNegocio.dll
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\bin\Debug\CapaEntidad.pdb
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\bin\Debug\CapaNegocio.pdb
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.csproj.CopyComplete
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.frmPrincipal.resources
+C:\Users\estudiante\source\repos\SistemaVentas\CapaPresentacionWindows\obj\Debug\CapaPresentacionWindows.Mantenimiento.frmCliente.resources
