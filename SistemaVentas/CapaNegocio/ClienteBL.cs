@@ -36,7 +36,25 @@ namespace CapaNegocio
 
         public bool Agregar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            //Aperturar la conexion con la base de datos
+            using (SqlConnection conexion = new SqlConnection(cadena))
+            {
+                string consulta = "insert into Tcliente values(@codCliente,@Apellidos,@Nombres,@Direccion)";
+                //Comando para ejecutar la consulta
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                //Enviar parametros
+                comando.Parameters.AddWithValue("@CodCliente", cliente.CodCliente);
+                comando.Parameters.AddWithValue("@Apellidos", cliente.Apellidos);
+                comando.Parameters.AddWithValue("@Nombres", cliente.Nombres);
+                comando.Parameters.AddWithValue("@Direccion", cliente.Direccion);
+                //Abrir la conexion con la base de datos
+                conexion.Open();
+                //Ejecutar la consulta
+                byte i = Convert.ToByte(comando.ExecuteNonQuery());
+                conexion.Close();
+                if (i == 1) return true;
+                else return false;
+            }
         }
 
         public DataTable Buscar(string codCliente)

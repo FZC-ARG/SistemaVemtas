@@ -4,3 +4,9 @@ C:\Users\estudiante\source\repos\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad
 C:\Users\estudiante\source\repos\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\estudiante\source\repos\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\estudiante\source\repos\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\estudiante\Desktop\Sistema Ventas\SistemaVentas\SistemaVentas\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\estudiante\Desktop\Sistema Ventas\SistemaVentas\SistemaVentas\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\estudiante\Desktop\Sistema Ventas\SistemaVentas\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.csprojAssemblyReference.cache
+C:\Users\estudiante\Desktop\Sistema Ventas\SistemaVentas\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\estudiante\Desktop\Sistema Ventas\SistemaVentas\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\estudiante\Desktop\Sistema Ventas\SistemaVentas\SistemaVentas\CapaEntidad\obj\Debug\CapaEntidad.pdb

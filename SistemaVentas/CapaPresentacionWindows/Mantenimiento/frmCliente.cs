@@ -30,5 +30,24 @@ namespace CapaPresentacionWindows.Mantenimiento
         {
             Listar();
         }
+
+        private void BtnAgregar_Click(object sender, EventArgs e)
+        {
+            //Agregar un cliente a la base de datos
+            Cliente cliente = new Cliente();
+            ClienteBL clienteBL = new ClienteBL();
+            cliente.CodCliente = txtCodCliente.Text.Trim();
+            cliente.Apellidos = txtApellidos.Text.Trim();
+            cliente.Nombres = txtNombres.Text.Trim();
+            cliente.Direccion = txtDireccion.Text.Trim();
+
+            if (clienteBL.Agregar(cliente))
+            {
+                MessageBox.Show("Datos Agregados Correctamente");
+                Listar();
+            }
+            else
+                MessageBox.Show("Error al Agregar Cliente");
+        }
     }
 }
