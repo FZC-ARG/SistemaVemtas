@@ -31,7 +31,31 @@ namespace CapaNegocio
 
         public bool Actualizar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(cadena))
+                {
+                    string consulta = "UPDATE TCliente SET Apellidos = @Apellidos, Nombres = @Nombres, Direccion = @Direccion where CodCliente = @CodCliente ";
+                    //Comando para ejecutar la consulta
+                    SqlCommand comando = new SqlCommand(consulta, conexion);
+                    //Enviar parametros
+                    comando.Parameters.AddWithValue("@CodCliente", cliente.CodCliente);
+                    comando.Parameters.AddWithValue("@Apellidos", cliente.Apellidos);
+                    comando.Parameters.AddWithValue("@Nombres", cliente.Nombres);
+                    comando.Parameters.AddWithValue("@Direccion", cliente.Direccion);
+                    //Abrir la conexion con la base de datos
+                    conexion.Open();
+                    //Ejecutar la consulta
+                    byte i = Convert.ToByte(comando.ExecuteNonQuery());
+                    conexion.Close();
+                    if (i == 1) return true;
+                    else return false;
+                }
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public bool Agregar(Cliente cliente)
@@ -59,12 +83,39 @@ namespace CapaNegocio
 
         public DataTable Buscar(string codCliente)
         {
-            throw new NotImplementedException();
+            using (SqlConnection conexion = new SqlConnection(cadena))
+            {
+                string consulta = "select * from TCliente where CodCliente = @CodCliente";
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.Parameters.AddWithValue("@CodCliente", codCliente);
+                SqlDataAdapter adapter = new SqlDataAdapter(comando);
+                DataTable tabla = new DataTable();
+                adapter.Fill(tabla);
+                return tabla;
+            }
         }
 
         public bool Eliminar(string codCliente)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                using (SqlConnection conexion = new SqlConnection(cadena))
+                {
+                    string consulta = "delete from Tcliente where CodCliente = @CodCliente";
+                    SqlCommand comando = new SqlCommand(consulta, conexion);
+                    comando.Parameters.AddWithValue("@CodCliente", codCliente);
+                    conexion.Open();
+                    int i = Convert.ToInt32(comando.ExecuteNonQuery());
+                    conexion.Close();
+                    if (i == 1) return true;
+                    else return false;
+                }
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         

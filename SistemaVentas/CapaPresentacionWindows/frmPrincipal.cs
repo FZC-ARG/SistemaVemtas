@@ -24,5 +24,10 @@ namespace CapaPresentacionWindows
             frm.MdiParent = this; // Es hijo del formulario principal
             frm.Show();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
